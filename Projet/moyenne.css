@@ -1,0 +1,74 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    background-color: #ffcb74;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #ffe9b3;
+}
+
+.notes {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.moyenne {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-calc {
+    margin-top: 15px;
+}
+
+/* ✅ Responsive design */
+@media (max-width: 480px) {
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    button {
+        width: 100%;
+    }
+}

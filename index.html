@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Davian Mbayi - Développeur Web</title>
+  <meta name="description" content="Portfolio professionnel de Davian Mbayi - Développeur Web Junior" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">
+          <img src="image\IMG-20251024-WA0005.jpg" alt="Photo">
+        </div>
+        <div>
+          <h1>Davian Mbayi – Développeur Web Junior</h1>
+          <p class="lead">Frontend · HTML/CSS · JavaScript · Python</p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#projects">Projets</a>
+        <a class="btn" href="#formation">Formation</a>
+        <a class="btn" href="#about">À propos</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <main class="left">
+        <section class="card hero-card">
+          <div class="hero-content">
+            <div>
+              <h2 style="margin:0 0 8px">Bonjour – Je suis Davian Mbayi</h2>
+              <p class="muted" style="margin:0">Passionné par le développement web et les nouvelles technologies</p>
+            </div>
+            <div>
+              <a class="download" href="Mon CV\Mon_CV.pdf">Télécharger mon CV (PDF)</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="card">
+          <div class="section-title">
+            <h2>Projet récent</h2>
+            <span class="muted">Mes réalisations</span>
+          </div>
+
+          <div class="projects">
+            <article class="project">
+              <div class="thumb">Calcul Moyenne</div>
+              <div class="body">
+                <div class="meta">JavaScript • 2025</div>
+                <h3>Calcul de la moyenne de n notes</h3>
+                <p class="muted">Programme de calcul d'une moyenne qui prend en entrée des notes et renvoie une moyenne et la liste des notes</p>
+                <a href="Projet\Moyenne.html" target="_blank" class="btn">Voir le code</a>
+              </div>
+            </article>
+            
+          <div class="projects">
+            <article class="project">
+              <div class="thumb">Gestionnaire de Collection (Python)</div>
+              <div class="body">
+                <div class="meta">Python, SQL, Git • 2026</div>
+                <h3>Gestionnaire de Collection</h3>
+                <p class="muted">Application de bureau CRUD avec base de données SQLite et interface graphique moderne (CustomTkinter).</p>
+                <a href="https://github.com/Davian-Mbayi/Gestionnaire-Collection.git" target="_blank" class="btn">Voir le Repo</a>
+                <a class="download" href="https://github.com/Davian-Mbayi/Gestionnaire-Collection/releases/tag/v1.0">Télécharger l'application</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="formation" class="card">
+          <div class="section-title">
+            <h2>Formation</h2>
+            <span class="muted">Mon parcours académique</span>
+          </div>
+          
+          <div class="formation-list">
+            <div class="formation-item">
+              <h3>Bachelor Informatique et Développement</h3>
+              <div class="school">IPSSI Lille</div>
+              <div class="period">Septembre 2025 - Septembre 2026 (en cours)</div>
+              <div class="description">
+                Formation complète en développement web et applications. Apprentissage des langages de programmation, de la conception d'applications, de la gestion de base de données et réseaux
+              </div>
+            </div>
+            
+            <div class="formation-item">
+              <h3>Etudes Secondaires</h3>
+              <div class="school">Complexe Scolaire La Sommité(R.D. Congo)</div>
+              <div class="period">2019 - Juillet 2025</div>
+              <div class="description">
+                Etudes secondaires en section scientifique avec obtetion du diplôme d'état(équivalent bac s) mention bien.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="card">
+          <div class="section-title">
+            <h2>À propos</h2>
+            <span class="muted">Qui suis-je ?</span>
+          </div>
+          <p style="line-height: 1.7;">
+            Je suis actuellement étudiant en première année de Bachelor Informatique et Développement à l'IPSSI Lille.<br><br>
+            Passionné par le développement web et les nouvelles technologies, j'aime comprendre comment les outils numériques fonctionnent et les transformer en solutions concrètes.<br><br>
+            Mon objectif est de renforcer mes compétences en programmation, conception d'applications et gestion de projets tout en développant une approche rigoureuse et créative du code.<br><br>
+            Je suis motivé, curieux et toujours prêt à apprendre – que ce soit à travers mes cours, mes projets personnels ou de nouvelles expériences professionnelles.
+          </p>
+          <div style="margin-top:24px">
+            <div style="font-weight:700;margin-bottom:12px;font-size:16px;color:var(--accent)">Compétences</div>
+            <div class="skills">
+              <div class="skill">HTML/CSS</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">Python</div>
+              <div class="skill">SQL</div>
+              <div class="skill">Git</div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="right">
+        <div class="card" id="contact">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <span class="muted">Restons en contact</span>
+          </div>
+          <div class="contact-list">
+            <div class="contact-item">
+              <strong>Email</strong>
+              <span class="muted" style="margin-left:auto">
+                <a href="mailto:davianmbayi20@gmail.com">davianmbayi20@gmail.com</a>
+              </span>
+            </div>
+            <div class="contact-item">
+              <strong>GitHub</strong>
+              <span class="muted" style="margin-left:auto">
+                <a href="https://github.com/Davian-Mbayi" target="_blank">Voir mon profil</a>
+              </span>
+            </div>
+            <div class="contact-item">
+              <strong>LinkedIn</strong>
+              <span class="muted" style="margin-left:auto">
+                <a href="https://www.linkedin.com/in/davian-mbayi-647b92385/" target="_blank">Me contacter</a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <section id="certifications" class="card">
+          <div class="section-title">
+            <h2>Certifications</h2>
+            <span class="muted">Mes accomplissements</span>
+          </div>
+
+          <div class="certificates">
+            <!-- Certification au format PNG -->
+             <div class="certificate with-image">
+              <h3>Linux Unhatched</h3>
+              <span class="muted">Cisco • 2025</span>
+              <div class="certificate-image">
+                <img src="certifications\Linux\linux-unhatched.png" alt="Certificat Linux Unhatched">
+              </div>
+              <a href="certifications\Linux\linux-unhatched.png" target="_blank" class="download small">
+              Télécharger
+              </a>
+            </div>
+
+            <!-- Certification au format PDF -->
+            <div class="certificate">
+              <h3>Certification MOOC</h3>
+              <span class="muted">ANSSI • 2025</span>
+              <div class="certificate-actions">
+                <a href="certifications\ANSSI\Certification ANSSI.pdf" target="_blank" class="download">
+                Voir le PDF
+                </a>
+              </div>
+            </div>
+
+            <!-- Certification avec plusieurs PDFs -->
+            <div class="certificate">
+              <h3>Atelier RGPD</h3>
+              <span class="muted">CNIL • 2025</span>
+              <div class="certificate-actions multiple">
+                <a href="certifications\RGPD\Certification module 1 RGPD.pdf" target="_blank" class="download small">
+                  Module 1 : LE RGPD ET SES NOTIONS CLÉS
+                </a>
+                <a href="certifications\RGPD\Certification module 2 RGPD.pdf" target="_blank" class="download small">
+                  Module 2 : LES PRINCIPES DE LA PROTECTION DES DONNÉES
+                </a>
+                <a href="certifications\RGPD\Certification module 3 RGPD.pdf" target="_blank" class="download small">
+                  Module 3 : LES RESPONSABILITÉS DES ACTEURS
+                </a>
+                <a href="certifications\RGPD\Certification module 4 RGPD.pdf" target="_blank" class="download small">
+                  Module 4 :  LE DPO ET LES OUTILS DE LA CONFORMITÉ
+                </a>
+                <a href="certifications\RGPD\Certification module 5 RGPD.pdf" target="_blank" class="download small">
+                  MODULE 5 : LES COLLECTIVITÉS TERRITORIALE
+                </a> 
+                <a href="certifications\RGPD\Attestation_de_suivi Certification module 6 RGPD.pdf" target="_blank" class="download small">
+                  MODULE 6 : TRAVAIL ET DONNÉES PERSONNELLES
+                </a> 
+              </div>
+            </div>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      <small>© <span id="year"></span> Davian Mbayi – Portfolio. Tous droits réservés</small>
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      document.getElementById('year').textContent = new Date().getFullYear();
+      
+      // Apparition progressive lors du scroll
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if(e.isIntersecting) {
+            e.target.style.animationPlayState = 'running';
+          }
+        });
+      }, {threshold: 0.1});
+      
+      document.querySelectorAll('.card, .project').forEach(el => {
+        el.style.animationPlayState = 'paused';
+        observer.observe(el);
+      });
+    })();
+  </script>
+</body>
+</html>
