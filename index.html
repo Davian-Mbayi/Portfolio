@@ -3,218 +3,129 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Davian Mbayi - Développeur Web</title>
-  <meta name="description" content="Portfolio professionnel de Davian Mbayi - Développeur Web Junior" />
+  <title>Davian Mbayi | Portfolio Cybersécurité</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="avatar">
-          <img src="image/tmp_2f2586fd-d0c3-43d9-8a4e-7d908abcc074.jpeg" alt="Photo">
-        </div>
-        <div>
-          <h1>Davian Mbayi – Développeur Web Junior</h1>
-          <p class="lead">Frontend · HTML/CSS · JavaScript · Python</p>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="logo">DM<span>.</span></span>
+      <div class="nav-links">
+        <a href="#about">Profil</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#certifications">Certificats</a>
+        <a href="#contact" class="nav-btn">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <span class="badge">Disponible en Mai 2026</span>
+        <h1>Davian Mbayi</h1>
+        <p class="role">Stagiaire en Cybersécurité & Développeur</p>
+        <p class="desc">Étudiant en Bachelor à l'IPSSI Lille, passionné par la sécurisation des systèmes et le développement d'outils performants.</p>
+        <div class="hero-actions">
+          <a href="Mon CV/CV Davian.pdf" class="btn-primary">Télécharger le CV</a>
+          <a href="#projects" class="btn-secondary">Voir les projets</a>
         </div>
       </div>
-      <nav>
-        <a class="btn" href="#projects">Projets</a>
-        <a class="btn" href="#formation">Formation</a>
-        <a class="btn" href="#about">À propos</a>
-        <a class="btn" href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <div class="grid">
-      <main class="left">
-        <section class="card hero-card">
-          <div class="hero-content">
-            <div>
-              <h2 style="margin:0 0 8px">Bonjour – Je suis Davian Mbayi</h2>
-              <p class="muted" style="margin:0">Passionné par le développement web et les nouvelles technologies</p>
-            </div>
-            <div>
-              <a class="download" href="Mon CV/CV Davian.pdf">Télécharger mon CV (PDF)</a>
-            </div>
-          </div>
-        </section>
-
-        <section id="projects" class="card">
-          <div class="section-title">
-            <h2>Projet récent</h2>
-            <span class="muted">Mes réalisations</span>
-          </div>
-
-          <div class="projects">
-            <article class="project">
-              <div class="thumb">Calcul Moyenne</div>
-              <div class="body">
-                <div class="meta">JavaScript • 2025</div>
-                <h3>Calcul de la moyenne de n notes</h3>
-                <p class="muted">Programme de calcul d'une moyenne qui prend en entrée des notes et renvoie une moyenne et la liste des notes</p>
-                <a href="Projet/Moyenne.html" target="_blank" class="btn">Voir le code</a>
-              </div>
-            </article>
-            
-            <article class="project">
-              <div class="thumb">Gestionnaire de Collection (Python)</div>
-              <div class="body">
-                <div class="meta">Python, SQL, Git • 2026</div>
-                <h3>Gestionnaire de Collection</h3>
-                <p class="muted">Application de bureau CRUD avec base de données SQLite et interface graphique moderne (CustomTkinter).</p>
-                <a href="https://github.com/Davian-Mbayi/Gestionnaire-Collection.git" target="_blank" class="btn">Voir le Repo</a>
-                <a class="download" href="https://github.com/Davian-Mbayi/Gestionnaire-Collection/releases/tag/v1.0">Télécharger l'application</a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section id="formation" class="card">
-          <div class="section-title">
-            <h2>Formation</h2>
-            <span class="muted">Mon parcours académique</span>
-          </div>
-          
-          <div class="formation-list">
-            <div class="formation-item">
-              <h3>Bachelor Informatique et Développement</h3>
-              <div class="school">IPSSI Lille</div>
-              <div class="period">Septembre 2025 - Septembre 2026 (en cours)</div>
-              <div class="description">
-                Formation complète en développement web et applications. Apprentissage des langages de programmation, de la conception d'applications, de la gestion de base de données et réseaux
-              </div>
-            </div>
-            
-            <div class="formation-item">
-              <h3>Etudes Secondaires</h3>
-              <div class="school">Complexe Scolaire La Sommité (R.D. Congo)</div>
-              <div class="period">2019 - Juillet 2025</div>
-              <div class="description">
-                Etudes secondaires en section scientifique avec obtention du diplôme d'état (équivalent bac s) mention bien.
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="about" class="card">
-          <div class="section-title">
-            <h2>À propos</h2>
-            <span class="muted">Qui suis-je ?</span>
-          </div>
-          <p style="line-height: 1.7;">
-            Je suis actuellement étudiant en première année de Bachelor Informatique et Développement à l'IPSSI Lille.<br><br>
-            Passionné par le développement web et les nouvelles technologies, j'aime comprendre comment les outils numériques fonctionnent et les transformer en solutions concrètes.<br><br>
-            Mon objectif est de renforcer mes compétences en programmation, conception d'applications et gestion de projets tout en développant une approche rigoureuse et créative du code.<br><br>
-            Je suis motivé, curieux et toujours prêt à apprendre – que ce soit à travers mes cours, mes projets personnels ou de nouvelles expériences professionnelles.
-          </p>
-          <div style="margin-top:24px">
-            <div style="font-weight:700;margin-bottom:12px;font-size:16px;color:var(--accent)">Compétences</div>
-            <div class="skills">
-              <div class="skill">HTML/CSS</div>
-              <div class="skill">JavaScript</div>
-              <div class="skill">Python</div>
-              <div class="skill">SQL</div>
-              <div class="skill">Git</div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <aside class="right">
-        <div class="card" id="contact">
-          <div class="section-title">
-            <h2>Contact</h2>
-            <span class="muted">Restons en contact</span>
-          </div>
-          <div class="contact-list">
-            <div class="contact-item">
-              <strong>Email</strong>
-              <span class="muted" style="margin-left:auto">
-                <a href="mailto:davianmbayi20@gmail.com">davianmbayi20@gmail.com</a>
-              </span>
-            </div>
-            <div class="contact-item">
-              <strong>GitHub</strong>
-              <span class="muted" style="margin-left:auto">
-                <a href="https://github.com/Davian-Mbayi" target="_blank">Voir mon profil</a>
-              </span>
-            </div>
-            <div class="contact-item">
-              <strong>LinkedIn</strong>
-              <span class="muted" style="margin-left:auto">
-                <a href="https://www.linkedin.com/in/davian-mbayi-647b92385/" target="_blank">Me contacter</a>
-              </span>
-            </div>
-          </div>
+      <div class="hero-visual">
+        <div class="avatar-frame">
+          <img src="image/tmp_2f2586fd-d0c3-43d9-8a4e-7d908abcc074.jpeg" alt="Davian Mbayi">
         </div>
-
-        <section id="certifications" class="card">
-          <div class="section-title">
-            <h2>Certifications</h2>
-            <span class="muted">Mes accomplissements</span>
-          </div>
-
-          <div class="certificates-container">
-            <div class="certificates-slider">
-              <div class="certificate-card">
-                <h3>Linux Unhatched</h3>
-                <span class="muted">Cisco • 2025</span>
-                <div class="certificate-image">
-                  <img src="certifications/Linux/linux-unhatched.png" alt="Certificat Linux Unhatched">
-                </div>
-              </div>
-
-              <div class="certificate-card">
-                <h3>Certification MOOC</h3>
-                <span class="muted">ANSSI • 2025</span>
-                <div class="certificate-actions">
-                  <a href="certifications/ANSSI/Certification ANSSI.pdf" target="_blank" class="download small">Voir le PDF</a>
-                </div>
-              </div>
-
-              <div class="certificate-card">
-                <h3>Atelier RGPD</h3>
-                <span class="muted">CNIL • 2025</span>
-                <div class="certificate-actions multiple">
-                  <a href="certifications/RGPD/Certification module 1 RGPD.pdf" target="_blank" class="download small">Mod. 1</a>
-                  <a href="certifications/RGPD/Certification module 2 RGPD.pdf" target="_blank" class="download small">Mod. 2</a>
-                  <a href="certifications/RGPD/Certification module 3 RGPD.pdf" target="_blank" class="download small">Mod. 3</a>
-                  <a href="certifications/RGPD/Certification module 4 RGPD.pdf" target="_blank" class="download small">Mod. 4</a>
-                  <a href="certifications/RGPD/Certification module 5 RGPD.pdf" target="_blank" class="download small">Mod. 5</a>
-                  <a href="certifications/RGPD/Attestation_de_suivi Certification module 6 RGPD.pdf" target="_blank" class="download small">Mod. 6</a>
-                </div>
-              </div>
-
-              <div class="certificate-card upcoming">
-                <h3>Bientôt disponible</h3>
-                <span class="muted">Nouvelle certification</span>
-              </div>
-            </div>
-          </div>
-        </section>
-      </aside>
+      </div>
     </div>
+  </header>
 
-    <footer>
-      <small>© <span id="year"></span> Davian Mbayi – Portfolio. Tous droits réservés</small>
-    </footer>
-  </div>
+  <main class="content">
+    
+    <section id="skills" class="section">
+      <h2 class="section-title">Expertise Technique</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Sécurité & Réseaux</h3>
+          <ul>
+            <li>Linux Debian & Windows Server</li>
+            <li>Cisco CCNA 1 & 2</li>
+            <li>Active Directory & Firewall</li>
+            <li>V-Sphere & ESXI</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Développement</h3>
+          <ul>
+            <li>Python & JavaScript</li>
+            <li>PHP 8+ & MySQL</li>
+            <li>Docker & Git</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <script>
-    (function() {
-      document.getElementById('year').textContent = new Date().getFullYear();
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(e => {
-          if(e.isIntersecting) { e.target.style.animationPlayState = 'running'; }
-        });
-      }, {threshold: 0.1});
-      document.querySelectorAll('.card, .project').forEach(el => {
-        el.style.animationPlayState = 'paused';
-        observer.observe(el);
-      });
-    })();
-  </script>
+    <section id="projects" class="section">
+      <h2 class="section-title">Réalisations Récentes</h2>
+      <div class="projects-list">
+        <article class="project-card">
+          <div class="project-info">
+            <span class="project-date">Janvier 2026</span>
+            <h3>Gestionnaire de Collection Rétro</h3>
+            <p>Application desktop CRUD sécurisée avec base SQLite et interface CustomTkinter.</p>
+            <div class="project-tags"><span>Python 3.13</span> <span>SQLite3</span></div>
+            <a href="https://github.com/Davian-Mbayi/Gestionnaire-Collection.git" class="link">Voir le code →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-info">
+            <span class="project-date">Novembre 2025</span>
+            <h3>Plateforme de Quiz Multi-rôle</h3>
+            <p>Système complet de gestion interactif avec flux adaptés par type d'utilisateur.</p>
+            <div class="project-tags"><span>PHP 8+</span> <span>MySQL</span> <span>Apache</span></div>
+            <a href="Projet/Moyenne.html" class="link">Démo Projet →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="certifications" class="section">
+      <h2 class="section-title">Certifications & Validations</h2>
+      <div class="cert-scroll">
+        <div class="cert-item">
+          <img src="certifications/Linux/linux-unhatched.png" alt="Linux Unhatched">
+          <h4>Linux Unhatched (Cisco)</h4>
+        </div>
+        <div class="cert-item">
+          <div class="cert-icon">🛡️</div>
+          <h4>SecNumacadémie (ANSSI)</h4>
+          <p>Scores : Auth (90%), Internet (88%)</p>
+        </div>
+        <div class="cert-item">
+          <div class="cert-icon">⚖️</div>
+          <h4>Atelier RGPD (CNIL)</h4>
+          <p>Conformité & Données</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <div class="footer-container">
+      <h2>Collaborons ensemble</h2>
+      <p>Actuellement en recherche d'un stage de 2 à 4 mois à Lille.</p>
+      <div class="social-links">
+        <a href="mailto:davianmbayi20@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/davian-mbayi-647b92385/">LinkedIn</a>
+        <a href="https://github.com/Davian-Mbayi">GitHub</a>
+      </div>
+      <p class="copy">© 2026 Davian Mbayi. Tous droits réservés.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
