@@ -65,6 +65,7 @@
             <li>PHP 8+, MySQL & SQLite3</li>
             <li>Docker, Git & GitHub</li>
             <li>PowerShell Scripting</li>
+            <li>HTML/CSS</li>
           </ul>
         </div>
       </div>
@@ -119,19 +120,39 @@
 
   <footer id="contact">
     <div class="footer-container">
-      <h2>INITIALISER_CONTACT</h2>
-      <p>Localisation: Lille, France</p>
-      <div class="social-links">
-        <a href="mailto:davianmbayi20@gmail.com">EMAIL</a>
-        <a href="https://www.linkedin.com/in/davian-mbayi-647b92385/">LINKEDIN</a>
-        <a href="https://github.com/Davian-Mbayi">GITHUB</a>
+      <h2 class="section-title">INITIALISER_CONTACT</h2>
+      <div class="contact-grid">
+        <div class="contact-form-container">
+          <form class="cyber-form">
+            <div class="input-group">
+              <label>USER_ID</label>
+              <input type="text" placeholder="Votre nom" required>
+            </div>
+            <div class="input-group">
+              <label>EMAIL_ADDRESS</label>
+              <input type="email" placeholder="votre@email.com" required>
+            </div>
+            <div class="input-group">
+              <label>MESSAGE_PAYLOAD</label>
+              <textarea rows="4" placeholder="Entrez votre message..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary">TRANSMETTRE_PAQUET</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <p class="location">LOCALISATION: Lille, France</p>
+          <div class="social-links">
+            <a href="mailto:davianmbayi20@gmail.com">EMAIL</a>
+            <a href="https://www.linkedin.com/in/davian-mbayi-647b92385/">LINKEDIN</a>
+            <a href="https://github.com/Davian-Mbayi">GITHUB</a>
+          </div>
+        </div>
       </div>
       <p class="copy">© 2026 Davian Mbayi // Terminal_Ver_2.0</p>
     </div>
   </footer>
 
   <script>
-    // Animation Matrix/Cyber Background
     const canvas = document.getElementById('cyber-bg');
     const ctx = canvas.getContext('2d');
     canvas.width = window.innerWidth;
@@ -145,7 +166,7 @@
     function draw() {
       ctx.fillStyle = "rgba(2, 6, 23, 0.05)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = "#10b98122"; // Vert émeraude très transparent
+      ctx.fillStyle = "#10b98122";
       ctx.font = fontSize + "px 'Fira Code'";
 
       for (let i = 0; i < drops.length; i++) {
