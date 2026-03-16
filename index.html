@@ -5,19 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Davian Mbayi | Portfolio Cybersécurité</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Fira+Code:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <canvas id="cyber-bg"></canvas>
+
   <nav class="navbar">
     <div class="nav-container">
-      <span class="logo">DM<span>.</span></span>
+      <span class="logo">DAVIAN_MBAYI<span>:</span></span>
       <div class="nav-links">
         <a href="#about">Profil</a>
-        <a href="#skills">Compétences</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projets</a>
         <a href="#certifications">Certificats</a>
-        <a href="#contact" class="nav-btn">Contact</a>
+        <a href="#contact" class="nav-btn">_Contact</a>
       </div>
     </div>
   </nav>
@@ -25,13 +27,13 @@
   <header class="hero">
     <div class="hero-container">
       <div class="hero-text">
-        <span class="badge">Disponible en Mai 2026</span>
+        <span class="badge">STATUS: DISPONIBLE_MAI_2026</span>
         <h1>Davian Mbayi</h1>
-        <p class="role">Stagiaire en Cybersécurité & Développeur</p>
-        <p class="desc">Étudiant en Bachelor à l'IPSSI Lille, passionné par la sécurisation des systèmes et le développement d'outils performants.</p>
+        <p class="role">STAGIAIRE_EN_CYBERSÉCURITÉ</p>
+        <p class="desc">Étudiant en Bachelor Informatique et Développement à l'IPSSI Lille. Spécialisé en administration système, réseaux et sécurisation des infrastructures.</p>
         <div class="hero-actions">
-          <a href="Mon CV/CV Davian.pdf" class="btn-primary">Télécharger le CV</a>
-          <a href="#projects" class="btn-secondary">Voir les projets</a>
+          <a href="Mon CV/CV Davian.pdf" class="btn-primary">TÉLÉCHARGER_CV</a>
+          <a href="#projects" class="btn-secondary">VOIR_PROJETS</a>
         </div>
       </div>
       <div class="hero-visual">
@@ -45,87 +47,119 @@
   <main class="content">
     
     <section id="skills" class="section">
-      <h2 class="section-title">Expertise Technique</h2>
+      <h2 class="section-title">TECH_STACK</h2>
       <div class="skills-grid">
         <div class="skill-category">
-          <h3>Sécurité & Réseaux</h3>
+          <h3>SÉCURITÉ & RÉSEAUX</h3>
           <ul>
-            <li>Linux Debian & Windows Server</li>
-            <li>Cisco CCNA 1 & 2</li>
-            <li>Active Directory & Firewall</li>
-            <li>V-Sphere & ESXI</li>
+            <li>CISCO CCNA 1 & 2</li>
+            <li>Linux Debian & Windows Server 2019</li>
+            <li>Active Directory, DNS, DHCP</li>
+            <li>V-Sphere, ESXI & VMWare</li>
           </ul>
         </div>
         <div class="skill-category">
-          <h3>Développement</h3>
+          <h3>DÉVELOPPEMENT_WEB</h3>
           <ul>
-            <li>Python & JavaScript</li>
-            <li>PHP 8+ & MySQL</li>
-            <li>Docker & Git</li>
+            <li>Python 3.13 & JavaScript</li>
+            <li>PHP 8+, MySQL & SQLite3</li>
+            <li>Docker, Git & GitHub</li>
+            <li>PowerShell Scripting</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section id="projects" class="section">
-      <h2 class="section-title">Réalisations Récentes</h2>
+      <h2 class="section-title">PROJETS_RÉCENTS</h2>
       <div class="projects-list">
         <article class="project-card">
           <div class="project-info">
-            <span class="project-date">Janvier 2026</span>
+            <span class="project-date">2026</span>
             <h3>Gestionnaire de Collection Rétro</h3>
-            <p>Application desktop CRUD sécurisée avec base SQLite et interface CustomTkinter.</p>
-            <div class="project-tags"><span>Python 3.13</span> <span>SQLite3</span></div>
-            <a href="https://github.com/Davian-Mbayi/Gestionnaire-Collection.git" class="link">Voir le code →</a>
+            <p>Application Desktop sécurisée avec interface CustomTkinter et base de données SQLite3.</p>
+            <div class="project-tags"><span>Python</span> <span>SQLite</span> <span>Git</span></div>
+            <a href="https://github.com/Davian-Mbayi/Gestionnaire-Collection.git" class="link">SRC_CODE →</a>
           </div>
         </article>
 
         <article class="project-card">
           <div class="project-info">
-            <span class="project-date">Novembre 2025</span>
+            <span class="project-date">2025</span>
             <h3>Plateforme de Quiz Multi-rôle</h3>
-            <p>Système complet de gestion interactif avec flux adaptés par type d'utilisateur.</p>
-            <div class="project-tags"><span>PHP 8+</span> <span>MySQL</span> <span>Apache</span></div>
-            <a href="Projet/Moyenne.html" class="link">Démo Projet →</a>
+            <p>Système de gestion interactif (Admin/Entreprise/Participant) développé en PHP avec MySQL.</p>
+            <div class="project-tags"><span>PHP 8</span> <span>SQL</span> <span>Apache</span></div>
+            <a href="Projet/Moyenne.html" class="link">LIVE_DEMO →</a>
           </div>
         </article>
       </div>
     </section>
 
     <section id="certifications" class="section">
-      <h2 class="section-title">Certifications & Validations</h2>
+      <h2 class="section-title">CERTIFICATIONS_VALIDÉES</h2>
       <div class="cert-scroll">
         <div class="cert-item">
-          <img src="certifications/Linux/linux-unhatched.png" alt="Linux Unhatched">
-          <h4>Linux Unhatched (Cisco)</h4>
+          <img src="certifications/Linux/linux-unhatched.png" alt="Cisco Linux">
+          <h4>Linux Unhatched</h4>
+          <span class="muted">Cisco Networking Academy</span>
         </div>
-        <div class="cert-item">
+        <div class="cert-item cert-cyber">
           <div class="cert-icon">🛡️</div>
-          <h4>SecNumacadémie (ANSSI)</h4>
-          <p>Scores : Auth (90%), Internet (88%)</p>
+          <h4>ANSSI SecNumacadémie</h4>
+          <p>Score Authentification: 90%</p>
         </div>
-        <div class="cert-item">
+        <div class="cert-item cert-cyber">
           <div class="cert-icon">⚖️</div>
-          <h4>Atelier RGPD (CNIL)</h4>
-          <p>Conformité & Données</p>
+          <h4>CNIL Atelier RGPD</h4>
+          <p>Modules 1 à 6 validés</p>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer id="contact">
     <div class="footer-container">
-      <h2>Collaborons ensemble</h2>
-      <p>Actuellement en recherche d'un stage de 2 à 4 mois à Lille.</p>
+      <h2>INITIALISER_CONTACT</h2>
+      <p>Localisation: Lille, France</p>
       <div class="social-links">
-        <a href="mailto:davianmbayi20@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/davian-mbayi-647b92385/">LinkedIn</a>
-        <a href="https://github.com/Davian-Mbayi">GitHub</a>
+        <a href="mailto:davianmbayi20@gmail.com">EMAIL</a>
+        <a href="https://www.linkedin.com/in/davian-mbayi-647b92385/">LINKEDIN</a>
+        <a href="https://github.com/Davian-Mbayi">GITHUB</a>
       </div>
-      <p class="copy">© 2026 Davian Mbayi. Tous droits réservés.</p>
+      <p class="copy">© 2026 Davian Mbayi // Terminal_Ver_2.0</p>
     </div>
   </footer>
 
+  <script>
+    // Animation Matrix/Cyber Background
+    const canvas = document.getElementById('cyber-bg');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const characters = "01ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const fontSize = 14;
+    const columns = canvas.width / fontSize;
+    const drops = Array(Math.floor(columns)).fill(1);
+
+    function draw() {
+      ctx.fillStyle = "rgba(2, 6, 23, 0.05)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#10b98122"; // Vert émeraude très transparent
+      ctx.font = fontSize + "px 'Fira Code'";
+
+      for (let i = 0; i < drops.length; i++) {
+        const text = characters.charAt(Math.floor(Math.random() * characters.length));
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+        drops[i]++;
+      }
+    }
+    setInterval(draw, 50);
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  </script>
 </body>
 </html>
