@@ -3,209 +3,354 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Davian Mbayi | Portfolio Cybersécurité & IT</title>
+  <title>Davian Mbayi — IT & Cybersécurité</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Fira+Code:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <canvas id="cyber-bg"></canvas>
+  <div class="noise"></div>
 
-  <nav class="navbar">
-    <div class="nav-container">
-      <span class="logo">DAVIAN_MBAYI<span>:</span></span>
-      <div class="nav-links">
-        <a href="#about">Profil</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Expériences & Projets</a>
-        <a href="#certifications">Certificats</a>
-        <a href="#contact" class="nav-btn">_Contact</a>
-      </div>
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">DM<span class="dot">.</span></span>
+    <div class="nav-links">
+      <a href="#about">Profil</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#skills">Skills</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact" class="nav-cta">Contact</a>
     </div>
+    <button class="nav-burger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
   </nav>
 
-  <header class="hero">
-    <div class="hero-container">
-      <div class="hero-text">
-        <span class="badge">STATUS: RECHERCHE DE STAGE (2 À 4 MOIS) DÈS MAI</span>
-        <h1>Davian Mbayi</h1>
-        <p class="role">TECHNICIEN SUPPORT IT / SÉCURITÉ</p>
-        <p class="desc">Étudiant en Bachelor Informatique et Développement à l'IPSSI Lille. Spécialisé en administration système, réseaux et sécurisation des infrastructures.</p>
+  <div class="nav-mobile">
+    <a href="#about">Profil</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#skills">Skills</a>
+    <a href="#projets">Projets</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <p class="hero-eyebrow"><span class="blink">▋</span> Disponible en stage</p>
+        <h1>Davian<br><span class="outline">Mbayi</span></h1>
+        <p class="hero-role">Technicien IT<span class="sep">/</span>Cybersécurité</p>
+        <p class="hero-desc">Étudiant en Bachelor Informatique & Développement à l'IPSSI Lille. Spécialisé en administration système, réseaux et sécurisation des infrastructures.</p>
         <div class="hero-actions">
-          <a href="Mon CV/MBAYI-Davian-cv (3)_Tech_IT.pdf" class="btn-primary">TÉLÉCHARGER_CV</a>
-          <a href="#experience" class="btn-secondary">VOIR_PARCOURS</a>
+          <a href="Mon CV/MBAYI-Davian-cv (3)_Tech_IT.pdf" class="btn">Télécharger CV</a>
+          <a href="#parcours" class="btn-ghost">Voir le parcours →</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Lille, France</span>
+          <span>🎓 IPSSI 2025–2028</span>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="avatar-frame">
+      <div class="hero-right">
+        <div class="photo-wrap">
           <img src="image/tmp_2f2586fd-d0c3-43d9-8a4e-7d908abcc074.jpeg" alt="Davian Mbayi">
+          <div class="photo-glow"></div>
+        </div>
+        <div class="stat-card stat-1">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-card stat-2">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Projets réalisés</span>
         </div>
       </div>
     </div>
-  </header>
+    <div class="scroll-hint">scroll <span>↓</span></div>
+  </section>
 
-  <main class="content">
-    
-    <section id="skills" class="section">
-      <h2 class="section-title">TECH_STACK</h2>
+  <!-- PARCOURS -->
+  <section class="section" id="parcours">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">01 / PARCOURS</span>
+        <h2>Mon chemin<br><span class="accent">jusqu'ici</span></h2>
+      </div>
+
+      <div class="parcours-grid">
+
+        <!-- FORMATION -->
+        <div class="parcours-col">
+          <h3 class="parcours-col-title"><span class="icon-wrap">🎓</span> Formation</h3>
+
+          <div class="parcours-card">
+            <div class="parcours-card-head">
+              <span class="parcours-date">2025 — 2028</span>
+              <span class="parcours-badge current">En cours</span>
+            </div>
+            <h4>Bachelor Informatique & Développement</h4>
+            <p class="parcours-place">IPSSI — Lille</p>
+            <p class="parcours-desc">Formation en 3 ans orientée administration système, réseaux, cybersécurité et développement web & applicatif.</p>
+            <ul class="parcours-tags">
+              <li>Sécurité réseau</li><li>Développement</li><li>Architecture IT</li>
+            </ul>
+          </div>
+
+          <div class="parcours-card">
+            <div class="parcours-card-head">
+              <span class="parcours-date">2024 — 2025</span>
+              <span class="parcours-badge done">Obtenu</span>
+            </div>
+            <h4>Baccalauréat Scientifique</h4>
+            <p class="parcours-desc">Baccalauréat obtenu Scientifique.</p>
+            <ul class="parcours-tags">
+              <li>NSI</li><li>Mathématiques</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- EXPÉRIENCE -->
+        <div class="parcours-col">
+          <h3 class="parcours-col-title"><span class="icon-wrap"></span> Expérience</h3>
+
+          <div class="parcours-card highlight">
+            <div class="parcours-card-head">
+              <span class="parcours-date">Mai 2026 — Présent</span>
+              <span class="parcours-badge current">Stage en cours</span>
+            </div>
+            <h4>Stage Développeur Web</h4>
+            <p class="parcours-place">Association Art Mode & Culture (AMC)</p>
+            <p class="parcours-desc">Stage de 2 dans le domaine du développement web réalisé chez Art Mode & Culture. Création d'un site web SPA(Single Page Application)</p>
+            <ul class="parcours-tags">
+              <li>HTML5/CSS3</li><li>Javascript</li><li>PHP</li>
+            </ul>
+          </div>
+
+          <div class="parcours-card">
+            <div class="parcours-card-head">
+              <span class="parcours-date">Juin — Août 2024</span>
+              <span class="parcours-badge done">Terminé</span>
+            </div>
+            <h4>Conseiller en Boutique</h4>
+            <p class="parcours-place">Vodacom Congo</p>
+            <p class="parcours-desc">Accueil et conseil clients sur les smartphones et accessoires. Aide à l'activation et à la configuration des appareils mobiles.</p>
+            <ul class="parcours-tags">
+              <li>Support client</li><li>Hardware</li><li>Télécom</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">02 / COMPÉTENCES</span>
+        <h2>Tech <span class="accent">Stack</span></h2>
+      </div>
       <div class="skills-grid">
-        <div class="skill-category">
-          <h3>SÉCURITÉ & RÉSEAUX</h3>
+        <div class="skill-block">
+          <div class="skill-block-icon">🛡️</div>
+          <h3>Sécurité & Réseaux</h3>
           <ul>
             <li>CISCO CCNA 1 & 2</li>
             <li>Windows Server 2019 & Linux Debian</li>
             <li>Active Directory, DNS, DHCP</li>
-            <li>Firewall & VMWare (ESXI, V-Sphere)</li>
+            <li>Firewall & VMware (ESXi, vSphere)</li>
+            <li>Architecture DMZ & zones réseau</li>
           </ul>
         </div>
-        <div class="skill-category">
-          <h3>DÉVELOPPEMENT & OUTILS</h3>
+        <div class="skill-block">
+          <div class="skill-block-icon">💻</div>
+          <h3>Développement</h3>
           <ul>
             <li>Python 3.13 & JavaScript</li>
-            <li>HTML5/CSS3</li>
-            <li>C & C#</li>
+            <li>HTML5 / CSS3</li>
             <li>PHP 8+ & SQL (MySQL, SQLite3)</li>
-            <li>Docker, Git & GitHub & Unity</li>
+            <li>C & C#</li>
             <li>PowerShell Scripting</li>
           </ul>
         </div>
+        <div class="skill-block">
+          <div class="skill-block-icon">🔧</div>
+          <h3>Outils & DevOps</h3>
+          <ul>
+            <li>Docker & Git / GitHub</li>
+            <li>Unity</li>
+            <li>CustomTkinter (Python GUI)</li>
+            <li>Apache</li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="experience" class="section">
-      <h2 class="section-title">EXPÉRIENCES_&_PROJETS</h2>
-      <div class="projects-list">
-        
-        <article class="project-card">
-          <div class="project-info">
-            <span class="project-date">Février 2026 | IPSSI</span>
-            <h3>Mise en Œuvre d'une Infrastructure</h3>
-            <p>Construction d'une infrastructure informatique sécurisée en groupe. Configuration de différentes zones réseaux (infrastructure, DMZ, utilisateurs, etc).</p>
-            <div class="project-tags"><span>Réseau</span> <span>Sécurité</span> <span>Architecture</span></div>
-          </div>
-        </article>
+  <!-- PROJETS -->
+  <section class="section" id="projets">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">03 / PROJETS</span>
+        <h2>Ce que j'ai <span class="accent">construit</span></h2>
+      </div>
+      <div class="projects-grid">
 
-        <article class="project-card">
-          <div class="project-info">
-            <span class="project-date">Janvier 2026 | IPSSI</span>
+        <a class="project-card big" href="https://github.com/Davian-Mbayi/Gestionnaire-Collection.git" target="_blank">
+          <div class="project-card-inner">
+            <span class="project-date">Janvier 2026 · IPSSI</span>
             <h3>Gestionnaire de Collection Rétro</h3>
             <p>Application Desktop sécurisée pour gérer une collection de jeux vidéo et suivre leur avancement.</p>
-            <div class="project-tags"><span>Python 3.13</span> <span>CustomTkinter</span> <span>SQLite3</span></div>
-            <a href="https://github.com/Davian-Mbayi/Gestionnaire-Collection.git" class="link" target="_blank">SRC_CODE →</a>
+            <div class="project-footer">
+              <ul class="project-tags"><li>Python 3.13</li><li>CustomTkinter</li><li>SQLite3</li></ul>
+              <span class="project-link">Code source →</span>
+            </div>
           </div>
-        </article>
+          <div class="project-img">
+            <img src="image/gestionnaire-jeux.png" alt="Gestionnaire de Collection">
+          </div>
+        </a>
 
-        <article class="project-card">
-          <div class="project-info">
-            <span class="project-date">Novembre 2025 | IPSSI</span>
-            <h3>Plateforme de Quiz Multi-rôle (Quizzeo)</h3>
-            <p>Système de gestion interactif (Admin/Entreprise/Participant) avec flux adaptés à chaque type d'utilisateurs. <strong>Rôle : Contributeur</strong>.</p>
-            <div class="project-tags"><span>PHP 8+</span> <span>MySQL</span> <span>Apache</span></div>
-            <a href="https://github.com/ImadAtouani/Quizzeo" class="link" target="_blank">SRC_CODE →</a>
-          </div>
-        </article>
+        <div class="project-card">
+          <span class="project-date">Février 2026 · IPSSI</span>
+          <h3>Infrastructure Sécurisée</h3>
+          <p>Construction d'une infrastructure en groupe avec zones réseaux (DMZ, utilisateurs, infrastructure).</p>
+          <ul class="project-tags"><li>Réseau</li><li>Sécurité</li><li>Architecture</li></ul>
+        </div>
 
-        <article class="project-card">
-          <div class="project-info">
-            <span class="project-date">2026 | Projet Personnel</span>
-            <h3>Calculateur de Moyenne Avancé</h3>
-            <p>Outil interactif de calcul de moyenne avec prise en compte des coefficients, interface dynamique et gestion des notes.</p>
-            <div class="project-tags"><span>JavaScript</span> <span>HTML5/CSS3</span> <span>UI/UX</span></div>
-            <a href="Projet/Moyenne.html" class="link">LIVE_DEMO →</a>
-          </div>
-        </article>
+        <a class="project-card" href="https://github.com/ImadAtouani/Quizzeo" target="_blank">
+          <span class="project-date">Novembre 2025 · IPSSI</span>
+          <h3>Quizzeo</h3>
+          <p>Plateforme de quiz multi-rôle (Admin / Entreprise / Participant) avec flux adaptés.</p>
+          <ul class="project-tags"><li>PHP 8+</li><li>MySQL</li><li>Apache</li></ul>
+          <span class="project-link">Code source →</span>
+        </a>
 
-        <article class="project-card">
-          <div class="project-info">
-            <span class="project-date">Juin 2024 - Août 2024</span>
-            <h3>Conseiller en Boutique - Vodacom Congo</h3>
-            <p>Accueil des clients, conseils techniques sur les smartphones et accessoires. Aide à l'activation et à la configuration des appareils.</p>
-            <div class="project-tags"><span>Support Client</span> <span>Hardware</span></div>
-          </div>
-        </article>
+        <a class="project-card" href="Projet/Moyenne.html" target="_blank">
+          <span class="project-date">2026 · Projet personnel</span>
+          <h3>Calculateur de Moyenne</h3>
+          <p>Outil interactif de calcul de moyenne avec coefficients et gestion des notes.</p>
+          <ul class="project-tags"><li>JavaScript</li><li>HTML5/CSS3</li></ul>
+          <span class="project-link">Démo live →</span>
+        </a>
 
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="certifications" class="section">
-      <h2 class="section-title">CERTIFICATIONS_VALIDÉES</h2>
-      <div class="cert-scroll">
-        <div class="cert-item">
-          <img src="certifications/Linux/linux-unhatched.png" alt="Cisco Linux">
-          <h4>Linux Unhatched</h4>
-          <span class="muted">Cisco Networking Academy</span>
+  <!-- CERTIFICATIONS -->
+  <section class="section section-alt" id="certifs">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">04 / CERTIFICATIONS</span>
+        <h2>Certifications <span class="accent">validées</span></h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card">
+          <img src="certifications/Linux/linux-unhatched.png" alt="Linux Unhatched">
+          <div>
+            <h4>Linux Unhatched</h4>
+            <span>Cisco Networking Academy</span>
+          </div>
         </div>
-        <div class="cert-item">
-          <img src="certifications/Linux/linux-essentials.png" alt="Cisco Linux">
-          <h4>Linux Essentials</h4>
-          <span class="muted">Cisco Networking Academy</span>
+        <div class="cert-card">
+          <img src="certifications/Linux/linux-essentials.png" alt="Linux Essentials">
+          <div>
+            <h4>Linux Essentials</h4>
+            <span>Cisco Networking Academy</span>
+          </div>
         </div>
-        <div class="cert-item">
-          <img src="certifications/Linux/python-essentials-1.1.png" alt="Cisco Linux">
-          <h4>Python Essentials 1</h4>
-          <span class="muted">Cisco Networking Academy</span>
+        <div class="cert-card">
+          <img src="certifications/Linux/python-essentials-1.1.png" alt="Python Essentials 1">
+          <div>
+            <h4>Python Essentials 1</h4>
+            <span>Cisco Networking Academy</span>
+          </div>
         </div>
-        <div class="cert-item">
-          <img src="certifications/Linux/python-essentials-2.png" alt="Cisco Linux">
-          <h4>Python Essentials 2</h4>
-          <span class="muted">Cisco Networking Academy</span>
+        <div class="cert-card">
+          <img src="certifications/Linux/python-essentials-2.png" alt="Python Essentials 2">
+          <div>
+            <h4>Python Essentials 2</h4>
+            <span>Cisco Networking Academy</span>
+          </div>
         </div>
-        <div class="cert-item cert-cyber">
-          <div class="cert-icon">🛡️</div>
-          <h4>ANSSI SecNumacadémie</h4>
-          <p>Score Authentification: 90%</p>
+        <div class="cert-card cert-text">
+          <div class="cert-icon-big">🛡️</div>
+          <div>
+            <h4>ANSSI SecNumacadémie</h4>
+            <span>Score Authentification : 90%</span>
+          </div>
         </div>
-        <div class="cert-item cert-cyber">
-          <div class="cert-icon">⚖️</div>
-          <h4>CNIL Atelier RGPD</h4>
-          <p>Modules 1 à 6 validés</p>
+        <div class="cert-card cert-text">
+          <div class="cert-icon-big">⚖️</div>
+          <div>
+            <h4>CNIL Atelier RGPD</h4>
+            <span>Modules 1 à 6 validés</span>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
+  <!-- CONTACT -->
   <footer id="contact">
-    <div class="footer-container">
-      <h2>INITIALISER_CONTACT</h2>
-      <p>Localisation: Lille, France</p>
-      <div class="social-links">
-        <a href="mailto:davianmbayi20@gmail.com">EMAIL</a>
-        <a href="https://www.linkedin.com/in/davian-mbayi-647b92385/" target="_blank">LINKEDIN</a>
-        <a href="https://github.com/Davian-Mbayi" target="_blank">GITHUB</a>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="tag">05 / CONTACT</span>
+        <h2>Travaillons<br><span class="accent">ensemble</span></h2>
+        <p>N'hésitez pas à me contacter pour toute opportunité ou collaboration.</p>
       </div>
-      <p class="copy">© 2026 Davian Mbayi</p>
+      <div class="footer-links">
+        <a href="mailto:davianmbayi20@gmail.com" class="contact-link">
+          <span class="contact-icon">✉</span>
+          <span>davianmbayi20@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/davian-mbayi-647b92385/" target="_blank" class="contact-link">
+          <span class="contact-icon">in</span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/Davian-Mbayi" target="_blank" class="contact-link">
+          <span class="contact-icon">⌥</span>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Davian Mbayi</span>
+      <span>Lille, France</span>
     </div>
   </footer>
 
   <script>
-    // Animation Matrix/Cyber Background
-    const canvas = document.getElementById('cyber-bg');
-    const ctx = canvas.getContext('2d');
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    // Burger menu
+    const burger = document.querySelector('.nav-burger');
+    const mobileNav = document.querySelector('.nav-mobile');
+    burger.addEventListener('click', () => {
+      mobileNav.classList.toggle('open');
+      burger.classList.toggle('active');
+    });
+    mobileNav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        burger.classList.remove('active');
+      });
+    });
 
-    const characters = "01ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
-    const fontSize = 14;
-    const columns = canvas.width / fontSize;
-    const drops = Array(Math.floor(columns)).fill(1);
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
 
-    function draw() {
-      ctx.fillStyle = "rgba(4, 10, 30, 0.05)";
-      ctx.fillRect(1, 1, canvas.width, canvas.height);
-      ctx.fillStyle = "#70b583"; // Vert émeraude très transparent
-      ctx.font = fontSize + "px 'Fira Code'";
-
-      for (let i = 0; i < drops.length; i++) {
-        const text = characters.charAt(Math.floor(Math.random() * characters.length));
-        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
-        drops[i]++;
-      }
-    }
-    setInterval(draw, 50);
-    window.addEventListener('resize', () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+    document.querySelectorAll('.parcours-card, .skill-block, .project-card, .cert-card').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
     });
   </script>
 </body>
